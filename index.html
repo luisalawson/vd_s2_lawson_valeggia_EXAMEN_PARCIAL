@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="exploracion/exp1/script.js"></script>
+    <script src="exploracion/exp2/script.js"></script>
+    <script src="exploracion/exp3/script.js"></script>
+    <script src="exploracion/exp4/script.js"></script>
+
+    <title>TP Visualizacion</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .titulo {
+        color: #637373;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+
+      }
+
+      .sub_titulo {
+        font-size: 12px;
+        color: #637373;
+        margin-top: 10px;
+        margin-bottom:10px;
+        text-align: center;
+      }
+
+      .descripcion{
+        color: #637373;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 10px;
+      }
+      
+      .subtitulo {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom:10px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      
+      
+      .grafico {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 80%;
+      border: 1px solid #637373;
+      padding: 10px;
+     
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="titulo">Primer parcial</div>
+  <div class="sub_titulo">blabla</div>
+
+
+    <div class="subtitulo">Grafico 1</div>
+    <div class="grafico">
+      <div id="chart_1"></div>
+    </div> 
+    <div class="descripcion"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae elit id quam pulvinar condimentum. Nulla porta nisi non magna aliquam, eu dapibus ligula facilisis. In auctor vehicula odio vulputate congue. Aliquam erat volutpat. Suspendisse potenti. Sed ante leo, varius in turpis sed, cursus rutrum turpis. Mauris scelerisque ut leo id varius. Praesent viverra, mi sit amet accumsan ultricies, arcu libero venenatis dolor, vel volutpat velit elit vitae odio.</div>
+  
+    <div class="subtitulo">Grafico 2</div>
+   <div class="grafico">
+     <div id="chart_2"></div>
+   </div>
+   <div class="descripcion"> Fusce quis ante et nibh aliquet ultricies. Fusce porta lacinia feugiat. Nunc lacus mi, vulputate et vehicula nec, tempor at turpis. Fusce vel ipsum et massa cursus elementum. Vivamus augue velit, rhoncus sit amet risus a, fermentum cursus neque. Maecenas consectetur volutpat nunc ut consequat. Donec sed purus in mauris mattis pretium sed et erat. Etiam semper commodo neque, et mollis justo.</div>
+
+
+    <div class="subtitulo">Grafico 3</div>
+    <div class="grafico">
+      <div id="chart_3"></div>
+    </div>
+    <div class="descripcion"> Praesent dictum arcu urna, sit amet tincidunt velit finibus nec. Donec justo augue, feugiat non sapien in, convallis egestas nibh. Ut convallis, massa non aliquet consequat, urna leo posuere sapien, a elementum tortor lorem in libero. Integer vel accumsan velit. Nullam posuere sapien eu neque porttitor, eget elementum diam dapibus. Duis ullamcorper, sem rutrum porttitor consequat, orci mi fermentum est, nec egestas eros enim ut est. Suspendisse a pharetra diam, non cursus eros. Proin ac aliquam velit. Vivamus sit amet mauris blandit, pharetra lorem a, ornare lacus.</div>
+
+
+    <div class="subtitulo">Grafico 4</div>
+    <div class="grafico">
+      <div id="chart_4"></div>
+    </div>
+    <div class="descripcion"> Sed pellentesque hendrerit ornare. Quisque vel urna a felis euismod tincidunt at non sapien. Curabitur tincidunt malesuada eros, id euismod libero condimentum consectetur. Vivamus sit amet magna maximus ligula ultrices vehicula. Nam laoreet dui molestie tellus euismod malesuada. Morbi fringilla ligula ac rhoncus interdum. Vestibulum aliquam enim vel quam luctus, ut pulvinar leo luctus. Donec non metus scelerisque, dictum orci molestie, laoreet tellus.    </div>
+
+
+</body>
+</html>
