@@ -5,21 +5,10 @@ d3.csv("autos_2.csv", d3.autoType).then((data) => {
       Plot.dot(data, {
         x: 'lon',
         y: 'lat',
-        r: 'cantidad',
+        //r: 'cantidad',
         fill: 'cantidad'
       }),
-      Plot.text(
-        data,
-        Plot.hexbin(
-          { text: "count"},
-          {
-            x: "lon",
-            y: "lat",
-            fill: "black",
-            stroke: "white"
-          }
-        )
-      ),
+  //YlGnBu
       Plot.frame(),
     ],
     grid: true,
@@ -31,7 +20,7 @@ d3.csv("autos_2.csv", d3.autoType).then((data) => {
     
     color:{
       legend: true,
-        scheme: "YlGnBu",
+      scheme: "rdylgn",
     },
   });
   
