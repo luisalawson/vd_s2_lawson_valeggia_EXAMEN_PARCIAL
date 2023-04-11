@@ -10,6 +10,7 @@ d3.csv('autos_2.csv', d3.autoType).then(data => {
     x: {
         tickRotate: -45,
         ticks: 14,
+        label: 'Dia',
         tickFormat: d => d3.timeFormat('%a %d')(d).toUpperCase(),
     },
     y: {
@@ -17,11 +18,11 @@ d3.csv('autos_2.csv', d3.autoType).then(data => {
       label: 'Cantidad de reclamos',
       tickFormat: 'd',
     },
-    inset: 10,
+    //inset: 10,
     marks: [
-      framed ? Plot.frame() : [],
+      //framed ? Plot.frame() : [],
       Plot.rectY( data, Plot.binX({y: 'count'}, {x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), thresholds: d3.timeDay, fill:'yellow', opacity:0.5 })),
-      Plot.rectY( data, Plot.binX({y: 'count'}, {x: d => d3.timeParse('%d/%m/%Y')(d.fecha_cierre_contacto), thresholds: d3.timeDay, fill:'red', opacity:0.5 })),
+      Plot.rectY(data, Plot.binX({y: 'count'}, {x: d => d3.timeParse('%d/%m/%Y')(d.fecha_cierre_contacto), thresholds: d3.timeDay, fill:'red', opacity:0.5 })),
     ],
   })
   d3.select('#chart_3').append(() => chart_3)
