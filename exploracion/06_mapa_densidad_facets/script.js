@@ -27,11 +27,9 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     ],
     facet: {
       data: data,
-      x: d => d3.timeFormat('%a')(d3.timeParse('%d/%m/%Y')(d.canal)),
+      x: 'canal',
     },
-    fx: {
-      domain: ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom']
-    },
+    
     width: 1000
   })
 
