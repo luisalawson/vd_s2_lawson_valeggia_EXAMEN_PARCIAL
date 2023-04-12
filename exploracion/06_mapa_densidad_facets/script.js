@@ -4,7 +4,7 @@ d3.json('https://cdn.jsdelivr.net/npm/d3-time-format@3/locale/es-ES.json').then(
 })
 
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.dsv(';', '147_intoxicacion_alimento.csv', d3.autoType)
+const dataFetch = d3.csv('autos_2.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   
@@ -27,7 +27,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     ],
     facet: {
       data: data,
-      x: d => d3.timeFormat('%a')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
+      x: d => d3.timeFormat('%a')(d3.timeParse('%d/%m/%Y')(d.canal)),
     },
     fx: {
       domain: ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom']
