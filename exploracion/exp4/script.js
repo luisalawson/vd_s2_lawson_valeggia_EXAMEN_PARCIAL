@@ -20,7 +20,7 @@ d3.csv("autos_2.csv", d3.autoType).then((data) => {
     
     color:{
       legend: true,
-      scheme: "rdylgn",
+      scheme: "ylorrd",
     },
   });
   
