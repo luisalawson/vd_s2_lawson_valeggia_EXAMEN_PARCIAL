@@ -4,7 +4,7 @@ d3.json('https://cdn.jsdelivr.net/npm/d3-time-format@3/locale/es-ES.json').then(
 })
 
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.csv('autos_2.csv', d3.autoType)
+const dataFetch = d3.dsv(';','todos.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   
@@ -27,12 +27,12 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     ],
     facet: {
       data: data,
-      x: 'canal',
+      x: 'categoria',
     },
     
     width: 1000
   })
 
   /* Agregamos al DOM la visualización chartMap */
-  d3.select('#chart').append(() => chartMap)
+  d3.select('#chart_5').append(() => chartMap)
 })
