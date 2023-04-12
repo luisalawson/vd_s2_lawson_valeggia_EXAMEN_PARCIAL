@@ -10,6 +10,7 @@ d3.csv('autos_2.csv', d3.autoType).then(data => {
     y: {
       grid: true,
       label: 'Cantidad de reclamos',
+      domain: [0,350]
     },
     marks: [
       Plot.areaY(
@@ -17,7 +18,8 @@ d3.csv('autos_2.csv', d3.autoType).then(data => {
         Plot.binX(
           { y: 'count'},
           { x: d => d3.timeParse('%H:%M:%S')(d.hora_ingreso), thresholds: d3.timeHour, fill:'darkcyan'}
-        )
+        ),
+        Plot.selectMaxY({x:"hora_ingreso", y:'count'})
       ),
     ]
   });
