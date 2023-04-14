@@ -1,5 +1,5 @@
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.csv('autos_2.csv', d3.autoType)
+const dataFetch = d3.dsv(';', '147_vehiculos_mal_estacionados.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   
@@ -33,6 +33,14 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
       }),
     ],
+    facet: {
+      data: data,
+      x: d => d3.timeFormat('%a')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
+    },
+    fx: {
+      domain: ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom']
+    },
+    width: 1000
   })
 
   /* Agregamos al DOM la visualización chartMap */
