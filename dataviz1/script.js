@@ -1,15 +1,16 @@
 d3.csv('todos.csv', d3.autoType).then(data => {
     let chart_def_1 = Plot.plot({
-    marginLeft: 230,
+      marginBottom: 150,
     y: {
       grid: true,
       label: 'Categoria'
     },
     x:{
-        label: 'Cantidad'
+        label: 'Cantidad',
+        tickRotate: -45
     },
     marks: [
-      Plot.barX(data, Plot.groupY({x: "count"}, {y: 'categoria'})),
+      Plot.barY(data, Plot.groupX({y: "count"}, {x: 'categoria'})),
     ]
   });
   d3.select('#chart_def_1').append(() => chart_def_1);
