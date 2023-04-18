@@ -1,3 +1,6 @@
+
+
+
 // config. fecha español
 d3.json('https://cdn.jsdelivr.net/npm/d3-time-format@3/locale/es-ES.json').then(locale => {
   d3.timeFormatDefaultLocale(locale)
