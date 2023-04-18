@@ -1,14 +1,14 @@
 
-d3.csv("autos_2.csv", d3.autoType).then((data) => {
+d3.dsv(';','limpieza_y_recoleccion_filtrado.csv', d3.autoType).then((data) => {
   let chart_4 = Plot.plot({
     marks: [
       Plot.dot(data, {
         x: 'lon',
         y: 'lat',
         //r: 'cantidad',
-        fill: 'cantidad'
+       fill:'domicilio_barrio'
       }),
-  //YlGnBu
+
       Plot.frame(),
     ],
     grid: true,
@@ -20,7 +20,7 @@ d3.csv("autos_2.csv", d3.autoType).then((data) => {
     
     color:{
       legend: true,
-      scheme: "ylorrd",
+      scheme: "YlGnBu",
     },
   });
   

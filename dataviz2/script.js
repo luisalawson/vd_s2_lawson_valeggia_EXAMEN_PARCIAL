@@ -12,7 +12,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   const reclamosPorBarrio = d3.group(data, d => d.domicilio_barrio) 
   console.log('reclamosPorBarrio', reclamosPorBarrio)
   
-  let chartMap = Plot.plot({
+  let chart_def_2 = Plot.plot({
    
     projection: {
       type: 'mercator',
@@ -46,5 +46,5 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   })
 
  
-  d3.select('#chart_7').append(() => chartMap)
+  d3.select('#chart_def_2').append(() => chart_def_2)
 })
