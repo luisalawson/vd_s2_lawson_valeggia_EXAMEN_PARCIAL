@@ -1,4 +1,4 @@
-d3.csv('todos.csv', d3.autoType).then(data => {
+d3.csv('data/todos.csv', d3.autoType).then(data => {
     let chart_def_1 = Plot.plot({
       marginBottom: 150,
     y: {

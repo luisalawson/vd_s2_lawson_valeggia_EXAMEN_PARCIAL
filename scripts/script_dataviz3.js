@@ -1,4 +1,4 @@
-d3.dsv(';', '147_desratizacion.csv', d3.autoType).then(data => {
+d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
   const groupedData = d3.rollup(
     data,
     v => d3.group(v, d => d.estado_del_contacto),
