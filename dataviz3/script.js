@@ -24,7 +24,7 @@ d3.dsv(';', '147_desratizacion.csv', d3.autoType).then(data => {
     x: {
       axis: 'top',
       round: true,
-      label: '← CERRADOS · Estado de los contactos · ABIERTOS →',
+      label: '← CERRADOS · Estado de los contactos · ABIERTOS →      ',
       labelAnchor: 'center',
       domain: [-xMax, xMax],
       tickFormat: d => Math.abs(d),
