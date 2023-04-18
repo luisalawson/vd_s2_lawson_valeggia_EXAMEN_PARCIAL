@@ -4,7 +4,7 @@ d3.json('https://cdn.jsdelivr.net/npm/d3-time-format@3/locale/es-ES.json').then(
 })
 
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.csv('limpieza_y_recoleccion_filtrado.csv', d3.autoType)
+const dataFetch = d3.dsv(';', 'limpieza_y_recoleccion_filtrado.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   
@@ -23,6 +23,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     marks: [
       Plot.density(data, { x: 'lon', y: 'lat', fill: 'density',bandwidth: 2, thresholds: 30 }),
       Plot.geo(barrios, {
+        
         stroke: 'gray',
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
       }),
@@ -40,4 +41,3 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   /* Agregamos al DOM la visualización chartMap */
   d3.select('#chart_7').append(() => chartMap)
 })
-
