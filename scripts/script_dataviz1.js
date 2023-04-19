@@ -3,7 +3,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
   dataFiltrada = data.filter(d => domiciliosFiltrados.includes(d.categoria));
   let chart_def_1 = Plot.plot({
     width: 1000, // Increase the chart width
-    height: 800, // Increase the chart height
+    height: 600, // Increase the chart height
     font: 'Poppins', // Set font family to Poppins
     marginLeft: 230,
     marks: [
