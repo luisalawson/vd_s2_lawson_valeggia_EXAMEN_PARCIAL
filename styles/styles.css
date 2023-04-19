@@ -16,7 +16,7 @@ p{
 .header {
   padding: 80px;
   text-align: center;
-  background: #41B6C4;
+  background: #4A7ACD;
   color: white;
 }
 
@@ -27,10 +27,12 @@ p{
 
 h2 {
   font-size: 40px;
+  text-align: center;
 }
 
 h5 {
   font-size: 30px;
+  text-align: center;
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -115,4 +117,11 @@ h5 {
     float: none;
     width: 100%;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

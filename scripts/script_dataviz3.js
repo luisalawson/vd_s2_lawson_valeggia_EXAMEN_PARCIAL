@@ -11,7 +11,7 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
       {x:"count"},
       {y:'domicilio_barrio',
 
-       fill: d => d.estado_del_contacto === "Abierto" ? "#225EA8" : "grey"        
+       fill: d => d.estado_del_contacto === "Abierto" ? "#225EA8" : "#C7D9F1"        
 
     }
       )),

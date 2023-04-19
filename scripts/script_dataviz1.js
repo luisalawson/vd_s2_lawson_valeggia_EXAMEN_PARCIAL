@@ -11,7 +11,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
           {
             y: "categoria",
             sort: { y: "x", reverse: true },  
-            fill: d => d.categoria === "LIMPIEZA Y RECOLECCIÓN" ? "#225EA8" : "grey"        
+            fill: d => d.categoria === "LIMPIEZA Y RECOLECCIÓN" ? "#225EA8" : "#C7D9F1"        
           } 
         ),
       )
