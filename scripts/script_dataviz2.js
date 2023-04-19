@@ -22,6 +22,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
 
   /* Mapa Coroplético */
   let chartMap = Plot.plot({
+    font: 'Poppins', // Set font family to P
     // https://github.com/observablehq/plot#projection-options
     projection: {
       type: 'mercator',
@@ -48,7 +49,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
           stroke: "black",
           textAnchor: "center",
           dx: 4,
-          filter: (d) => d.properties.DENUNCIAS > 25
+          filter: (d) => d.properties.DENUNCIAS > 20
         })
       )
     ],
