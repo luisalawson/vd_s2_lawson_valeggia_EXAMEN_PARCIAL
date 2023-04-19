@@ -8,11 +8,11 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
     font: 'Poppins', // Set font family to P
     marginLeft: 120,
     marks:[
-    Plot.barX(
+    Plot.barY(
       dataFiltrada, 
-      Plot.groupY(
-      {x:"count"},
-      {y:'domicilio_barrio',
+      Plot.groupX(
+      {y:"count"},
+      {x:'domicilio_barrio',
        fill: d => d.estado_del_contacto === "Abierto" ? "#225EA8" : "#C7D9F1"        
     }
       )),
