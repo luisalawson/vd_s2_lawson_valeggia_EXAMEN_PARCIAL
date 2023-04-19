@@ -1,43 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head> 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="scripts/script_dataviz1.js"></script>
-    <script src="scripts/script_dataviz2.js"></script>
-    <script src="scripts/script_dataviz3.js"></script>
-    <title>TP Visualizacion</title>
-    <link rel = "stylesheet" href = "styles/styles.css"/>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <script src="scripts/script_dataviz1.js"></script>
+  <script src="scripts/script_dataviz2.js"></script>
+  <script src="scripts/script_dataviz3.js"></script>
+  <title>TP Visualizacion</title><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="titulo"> Un verano problemático en Buenos Aires</div>
-  <div class="sub_titulo"> El verano en Buenos Aires no está resultando como todos los años. Las denuncias no dejan de llegar a la policía y a los medios de comunicación. La ciudad se está convirtiendo en un lugar con disturbios. Por ello, comenzaremos a investigar detenidamente cada una de las denuncias. 
+
+<div class="header">
+  <h1>Verano problemático en Buenos Aires</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Entrega Final</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Primer parcial</h2>
+    <ul>
+      <li>Sol Valeggia</li>
+      <li>Luisa Lawson</li>
+    </ul>
   </div>
+  <div class="main">
+    <h2>GRAFICO 1</h2>
+    <h5>Dataset: todos</h5>
+    <div id="chart_def_1"></div>
+    <p class = "titulares">descripcion</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>GRAFICO 2</h2>
+    <h5>dataset:</h5>
+    <div id="chart_def_2"></div>
+    <p>Descripcion.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>GRAFICO 3</h2>
+    <h5>dataset:</h5>
+    <div id="chart_def_3"></div>
+    <p>Descripcion.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
 
-    <div class="subtitulo">Grafico 1</div>
-    <div class="grafico">
-      <div id="chart_def_1"></div>
-    </div> 
-    <div class="descripcion"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae elit id quam pulvinar condimentum. Nulla porta nisi non magna aliquam, eu dapibus ligula facilisis. In auctor vehicula odio vulputate congue. Aliquam erat volutpat. Suspendisse potenti. Sed ante leo, varius in turpis sed, cursus rutrum turpis. Mauris scelerisque ut leo id varius. Praesent viverra, mi sit amet accumsan ultricies, arcu libero venenatis dolor, vel volutpat velit elit vitae odio.</div>
-  
-    <div class="subtitulo">Grafico 2</div>
-   <div class="grafico">
-     <div id="chart_def_2"></div>
-   </div>
-   <div class="descripcion"> Fusce quis ante et nibh aliquet ultricies. Fusce porta lacinia feugiat. Nunc lacus mi, vulputate et vehicula nec, tempor at turpis. Fusce vel ipsum et massa cursus elementum. Vivamus augue velit, rhoncus sit amet risus a, fermentum cursus neque. Maecenas consectetur volutpat nunc ut consequat. Donec sed purus in mauris mattis pretium sed et erat. Etiam semper commodo neque, et mollis justo.</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
-
-    <div class="subtitulo">Grafico 3</div>
-    <div class="grafico">
-      <div id="chart_def_3"></div>
-    </div>
-    <div class="descripcion"> Praesent dictum arcu urna, sit amet tincidunt velit finibus nec. Donec justo augue, feugiat non sapien in, convallis egestas nibh. Ut convallis, massa non aliquet consequat, urna leo posuere sapien, a elementum tortor lorem in libero. Integer vel accumsan velit. Nullam posuere sapien eu neque porttitor, eget elementum diam dapibus. Duis ullamcorper, sem rutrum porttitor consequat, orci mi fermentum est, nec egestas eros enim ut est. Suspendisse a pharetra diam, non cursus eros. Proin ac aliquam velit. Vivamus sit amet mauris blandit, pharetra lorem a, ornare lacus.</div>
-
-    <footer>
-      <p> Sol Valeggia y Luisa Lawson</p>
-      <!-- <p><a href="https://luisalawson.github.io/vd_s2_lawson_valeggia_EXAMEN_PARCIAL/">Pagina en Github Pages</a></p> -->
-    </footer>
-
-  </body>
- 
+</body>
 </html>
+
+

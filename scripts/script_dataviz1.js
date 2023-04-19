@@ -1,18 +1,32 @@
 d3.csv('data/todos.csv', d3.autoType).then(data => {
-    let chart_def_1 = Plot.plot({
-      marginBottom: 150,
-    y: {
-      grid: true,
-      label: 'Categoria'
-    },
-    x:{
-        label: 'Cantidad',
-        tickRotate: -45
-    },
+  
+
+  let chart_def_1 = Plot.plot({
+    marginLeft: 230,
     marks: [
-      Plot.barY(data, Plot.groupX({y: "count"}, {x: 'categoria'})),
-    ]
+      Plot.barX(
+        data,
+        Plot.groupY(
+          { x: "count" }, 
+          {
+            y: "categoria",
+            sort: { y: "x", reverse: true },  
+            fill: d => d.categoria === "LIMPIEZA Y RECOLECCIÓN" ? "#225EA8" : "grey"        
+          } 
+        ),
+      )
+    ],
+    y: {
+      label: "",
+      tickTransform: d => d.toLowerCase()
+    },
+
   });
+
   d3.select('#chart_def_1').append(() => chart_def_1);
+
 });
+
+
+
 
