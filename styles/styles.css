@@ -4,8 +4,8 @@
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-family: 'Poppins', sans-serif;  margin: 0;
+
 }
 
 p{
@@ -99,6 +99,7 @@ h5 {
 
 /* Footer */
 .footer {
+  font-family: 'Poppins', sans-serif;
   padding: 20px;
   text-align: center;
   background: #4A7ACD;
@@ -123,5 +124,4 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
