@@ -3,8 +3,8 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
   dataFiltrada = data.filter(d => domiciliosFiltrados.includes(d.domicilio_barrio));
   
   let chart = Plot.plot({
-    width: 800, // Increase the chart width
-    height: 800, // Increase the chart height
+    width: 600, // Increase the chart width
+    height: 600, // Increase the chart height
     font: 'Poppins', // Set font family to P
     marginLeft: 120,
     marks:[
