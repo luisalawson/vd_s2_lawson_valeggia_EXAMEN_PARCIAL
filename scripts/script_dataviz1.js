@@ -35,7 +35,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
     ],
     y: {
       label: "",
-      tickTransform: d => d.toLowerCase()
+      tickFormat: d => d.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
     },
     x: {
       domain:[0,4500]
