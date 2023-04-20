@@ -42,4 +42,3 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
   );
   d3.select('#chart_def_3').append(() => chart);
 });
- 

@@ -48,8 +48,3 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
   d3.select('#chart_def_1').append(() => chart_def_1);
 
 });
-
-
-
-
-

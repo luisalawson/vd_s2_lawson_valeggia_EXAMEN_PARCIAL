@@ -60,5 +60,4 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   d3.select('#chart_def_2').append(() => chartMap)
 
 
-})
-
+});
