@@ -2,20 +2,6 @@
   box-sizing: border-box;
 }
 
-.imagen{
-  width: 85px; /* ancho deseado del contenedor */
-  height: 60px;
-  float: left;
-  padding-left: 16px;
-  align-items: center;
-  margin-top: 17px;
-}
-
-.imagen img{
-  max-width: 100%;
-  height: auto;
-}
-
 /* Style the body */
 body {
   font-family: 'Poppins', sans-serif;  margin: 0;
@@ -26,53 +12,73 @@ a {
   color: #4A7ACD;
 }
 
+.navbar a{
+  font-size: 25px;
+}
+
 p{
   font-size: 25px;
 }
 
-h3{
-  color: whitesmoke;
-  margin-left: 25px;
-  float: left;
-  font-size: 28px;
-}
-
-.nombres{
-  float: right;
-  padding-right: 12px;
-}
-
 /* Header/logo Title */
 .header {
-  padding: 60px;
+  padding: 120px;
   text-align: center;
+  background: white;
   color: #4A7ACD;
-  font-family: 'Poppins', sans-serif;  margin: 0;
-  background-color: #fefefe;
+  
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
-  background-color:  #4A7ACD;
+  background-color: #333;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
 }
 
 /* Column container */
@@ -83,11 +89,13 @@ h5 {
   flex-wrap: wrap;
 }
 
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
 .side {
   -ms-flex: 100%; /* IE10 */
   flex: 100%;
   background-color: #f1f1f1;
-  padding: 100px;
+  padding: 200px;
 }
 
 /* Main column */
@@ -101,9 +109,10 @@ h5 {
 /* Footer */
 .footer {
   font-family: 'Poppins', sans-serif;
+  padding: 20px;
   text-align: center;
-  background: #4A7ACD;
-  height: 80px;
+  background: #333;
+  color: white;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -118,6 +127,7 @@ h5 {
   .navbar a {
     float: none;
     width: 100%;
+   
   }
 }
 
@@ -126,3 +136,4 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+
