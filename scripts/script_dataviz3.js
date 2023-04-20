@@ -12,7 +12,7 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
       Plot.groupX(
       {y:"count"},
       {x:'domicilio_barrio',
-       fill: d => d.estado_del_contacto === "Cerrado" ? "#225EA8" : "#EBECF0"        
+       fill: d => d.estado_del_contacto === "Cerrado" ? "#225EA8" : "#E8F2FC"        
     }
       )),
       Plot.text(
@@ -33,6 +33,7 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
     },
     y:{
       label: "",
+      ticks: 0
      
     },
     x:{
