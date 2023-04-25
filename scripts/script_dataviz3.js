@@ -66,6 +66,7 @@ d3.dsv(';', 'data/147_desratizacion.csv', d3.autoType).then(data => {
       label: "",
       tickSize: 10,
       tickPadding: 10,
+      tickFormat: d => d.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
     },
     
   }

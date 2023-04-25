@@ -22,8 +22,8 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
 
   /* Mapa Coroplético */
   let chartMap = Plot.plot({
-    width: 650, // Increase the chart width
-    height: 500, // Increase the chart height
+    width: 550, // Increase the chart width
+    height: 400, // Increase the chart height
     font: 'Poppins', // Set font family to P
     // https://github.com/observablehq/plot#projection-options
     projection: {
