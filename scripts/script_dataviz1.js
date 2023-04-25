@@ -2,10 +2,13 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
   const domiciliosFiltrados = ['LIMPIEZA Y RECOLECCIÓN', 'TRÁNSITO', 'CALLES Y VEREDAS', 'ARBOLADO Y ESPACIOS VERDES','TRÁMITES Y SERVICIOS','ORDENAMIENTO DEL ESPACIO PÚBLICO','MEDIOS DE TRANSPORTE','ALUMBRADO', 'RECICLADO Y PROTECCIÓN AMBIENTAL','CONTROL EDILICIO','FISCALIZACIÓN ACTIVIDADES COMERCIALES','BARRIOS EMERGENTES'];
   dataFiltrada = data.filter(d => domiciliosFiltrados.includes(d.categoria));
   let chart_def_1 = Plot.plot({
+    style:{
+      fontSize: 10,
+    },
     width: 750, // Increase the chart width
     height: 600, // Increase the chart height
     font: 'Poppins', // Set font family to Poppins
-    marginLeft: 230,
+    marginLeft: 250,
     marks: [
       Plot.barX(
         dataFiltrada,
@@ -40,7 +43,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
     x: {
       domain: [0, 4500],
       label: "CANTIDAD DE CONTACTOS",
-      ticks: 0
+      ticks: 0,
     },
 
   });
