@@ -5,8 +5,8 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
     style:{
       fontSize: 10,
     },
-    width: 750, // Increase the chart width
-    height: 600, // Increase the chart height
+    width: 650, // Increase the chart width
+    height: 500, // Increase the chart height
     font: 'Poppins', // Set font family to Poppins
     marginLeft: 250,
     marks: [
