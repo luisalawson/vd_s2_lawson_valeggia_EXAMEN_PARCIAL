@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <script src="scripts/script_dataviz1.js"></script>
+  <script src="scripts/script_dataviz2.js"></script>
+  <script src="scripts/script_dataviz3.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Mi índice</title>
+	<style>
+		body {
+			background-image:url('https://images.unsplash.com/photo-1587574901114-1f36f2f08543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+            font-family: 'Poppins', sans-serif;  margin: 0;
+		}
+		.caja {
+			position: absolute;
+			width: 70%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 10%;
+			background-color: white;
+			align-items: center;
+			text-align: center;
+		}
+		.container{
+			align-items: center;
+		}
+		.back-button {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			padding: 10px 20px;
+			background-color: white;
+			color: black;
+			border-radius: 5px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+    
+</head>
+<body>
+    <div class = "caja">
+        <h2>La limpieza en la cima: La principal preocupación ciudadana en enero</h2>
+        <h5>Dataset utilizado: <a href="https://github.com/visualizacion-de-datos-utdt/vd_linea147/blob/main/147_01-07_enero.csv">Datos sobre contactos primer semana de enero de 2021</a></h5>
+		<div class="container" style="display: flex; justify-content: center;">
+			<div id="chart_def_1"></div>
+		  </div>
+		  
+         <p>La cantidad de denuncias en Buenos Aires en enero pueden ser muchas, pero sin duda las denuncias acerca de la limpieza y recolección se lleva la copa. Las vacaciones se toman en serio en la ciudad.</p>
+         <br>
+       </div>
+	
+
+	<button class="back-button" onclick="window.history.back()">Regresar</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+* {
+    transition: all 25.0s ease-in-out;
+  }
+
+body {
+    background-image: url("https://images.pexels.com/photos/14401404/pexels-photo-14401404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;  margin: 0;
+  }
+
+.caja {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.409);
+    border: 3px solid #192537;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color : #192537;
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.boton {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #192537;
+    color: #192537;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;  margin: 0;
+    transition: transform 1.5s ease;
+}
+
+.boton:hover {
+    background-color: #3a5882;
+    color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transform: scale(1.2);
+  }
+
+.boton:active {
+    transform: scale(2.8);
+}
