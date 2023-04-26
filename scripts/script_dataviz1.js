@@ -8,7 +8,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
     width: 650, // Increase the chart width
     height: 500, // Increase the chart height
     font: 'Poppins', // Set font family to Poppins
-    marginLeft: 250,
+    marginLeft: 260,
     marks: [
       Plot.barX(
         dataFiltrada,
