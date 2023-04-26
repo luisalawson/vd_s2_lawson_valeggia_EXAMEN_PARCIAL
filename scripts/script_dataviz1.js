@@ -3,7 +3,7 @@ d3.csv('data/todos.csv', d3.autoType).then(data => {
   dataFiltrada = data.filter(d => domiciliosFiltrados.includes(d.categoria));
   let chart_def_1 = Plot.plot({
     style:{
-      fontSize: 15,
+      fontSize: 13,
     },
     width: 650, // Increase the chart width
     height: 500, // Increase the chart height
